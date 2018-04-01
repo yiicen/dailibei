@@ -22,7 +22,7 @@ static int Compare(const void *a, const void *b) {
     return ((struct Object *)a)->val - ((struct Object *)b)->val;
 }
 
-extern int *TwoSum(int *nums, int nums_size, int target) {
+extern int * TwoSum(int *nums, int nums_size, int target) {
     int i, j;
     struct Object *objs = malloc(nums_size * sizeof(struct Object));
     for (i = 0; i != nums_size; ++i) {
